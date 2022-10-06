@@ -88,9 +88,11 @@ export default {
         //   email: "",
         //   password: "",
         // }),
-        alert("Submitted successfully");
+
         // this.goToProducts();
         this.$store.commit("login");
+        alert("Submitted successfully");
+        this.$router.push("/");
       }
     },
   },
